@@ -15,6 +15,8 @@
   --HoverButton1: #a0bce0;
   --poppins: "Poppins", sans-serif;
   --inter: "Inter", sans-serif;
+  --userblur: blur(150px);
+  --userbg: rgba(0, 0, 0, 0.04);
 }
 
 @theme {
@@ -30,6 +32,7 @@
   --color-button2: var(--button2);
   --color-HoverButton: var(--HoverButton);
   --color-HoverButton1: var(--HoverButton1);
+  --color-userbg: var(--userbg);
   --font-poppins: var(--poppins);
   --font-inter: var(--inter);
 }
@@ -95,10 +98,9 @@
 .user {
   border-radius: 50%;
   padding: 10px;
-  transition: ease-in all 0.2s;
+  transition: ease-in all 0.7s;
 }
 .user:hover {
   background: var(--Secondary2);
-  scale: 0.9;
   color: #ddd;
 }
