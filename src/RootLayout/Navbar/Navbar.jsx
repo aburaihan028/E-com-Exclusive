@@ -13,9 +13,9 @@ const Navbar = () => {
   const [account, setaccount] = useState(false);
   // const userAccRef = useRef(null);
 
-  const handleAccount = () => {
-    setaccount(!account);
-  };
+  // const handleAccount = () => {
+  //   setaccount(!account);
+  // };
   // useEffect(() => {
   //   window.addEventListener("click", (e) => {
   //     if (userAccRef.current.contains(e.target)) {
@@ -76,7 +76,7 @@ const Navbar = () => {
                 <div className="user">
                   <span
                     className="text-[26px] cursor-pointer"
-                    onClick={handleAccount}
+                    // onClick={handleAccount}
                     // ref={userAccRef}
                   >
                     <FaUser />
