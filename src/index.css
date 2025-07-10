@@ -16,7 +16,7 @@
   --poppins: "Poppins", sans-serif;
   --inter: "Inter", sans-serif;
   --userblur: blur(150px);
-  --userbg: rgba(0, 0, 0, 0.04);
+  --userbg: #000000ab;
 }
 
 @theme {
@@ -39,7 +39,7 @@
 
 /* common css */
 
-.fontcss {
+.ragular {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -98,9 +98,27 @@
 .user {
   border-radius: 50%;
   padding: 10px;
-  transition: ease-in all 0.7s;
+  transition: ease-in all 0.3s;
 }
 .user:hover {
   background: var(--Secondary2);
   color: #ddd;
 }
+
+/* .group {
+  border-radius: 50%;
+  padding: 10px;
+  transition: ease-in all 0.3s;
+}
+.group:hover {
+  background: var(--Secondary2);
+  color: #ddd;
+}
+.dropDown {
+  left: -9999px;
+  transition: opacity 0.3s ease;
+}
+
+.group:hover.dropDown {
+  left: 0;
+} */
