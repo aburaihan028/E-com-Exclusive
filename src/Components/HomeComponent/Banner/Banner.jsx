@@ -6,7 +6,6 @@ import Slider from "react-slick";
 import { useState } from "react";
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  console.log(currentSlide);
 
   const settings = {
     dots: true,

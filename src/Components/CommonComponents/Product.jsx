@@ -1,0 +1,59 @@
+import React from "react";
+import Frame611 from "../../assets/ProductImg/Frame611.png";
+import { GiSelfLove } from "react-icons/gi";
+import { IoEyeOutline } from "react-icons/io5";
+import { FaStar } from "react-icons/fa";
+const Product = () => {
+  return (
+    <div>
+      <div className="bg-amber-200 mt-[40px]">
+        <div className="w-[270px]">
+          {/* Img part*/}
+          <div className="w-[270px] h-[250px] px-[40px] py-[35px] bg-Secondary rounded flex justify-center relative">
+            <div>
+              <picture>
+                <img
+                  src={Frame611}
+                  alt={Frame611}
+                  className="w-full h-full object-contain"
+                />
+              </picture>
+            </div>
+            <span className="flex items-center justify-center w-[55px] h-[26px] bg-Secondary2 text-text font-poppins font-normal rounded absolute top-[12px] left-[12px]">
+              - 40%
+            </span>
+            <div className="absolute top-[12px] right-[12px] flex flex-col gap-y-[12px]">
+              <span className="w-[40px] h-[40px] text-[18px] rounded-full bg-primary flex justify-center items-center hover:bg-Secondary2 hover:text-white hover:scale-[1.1] transition-all cursor-pointer">
+                <GiSelfLove />
+              </span>
+              <span className="w-[40px] h-[40px] text-[20px] rounded-full bg-primary flex justify-center items-center hover:bg-Secondary2 hover:text-white hover:scale-[1.1] transition-all cursor-pointer">
+                <IoEyeOutline />
+              </span>
+            </div>
+          </div>
+          {/* description part */}
+          <div className="flex flex-col gap-y-2 mt-4 ">
+            <span className="font-poppins font-bold">HAVIT HV-G92 Gamepad</span>
+            <span className="font-poppins font-bold text-Secondary2">
+              $120 <del className="text-[#00000080] ms-3">$160</del>
+            </span>
+            {/*  */}
+            <div className="flex items-center justify-start gap-x-3">
+              <div className="flex items-center gap-x-1">
+                {" "}
+                {[...new Array(5)].map((item, index) => (
+                  <span key={index} className="text-[#FFAD33]">
+                    <FaStar />
+                  </span>
+                ))}
+              </div>
+              <span>(88)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Product;

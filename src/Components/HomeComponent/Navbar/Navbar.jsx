@@ -26,6 +26,8 @@ const Navbar = () => {
         setaccount(false);
       }
     });
+
+    return () => close;
   }, []);
 
   return (
