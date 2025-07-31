@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-const Timer = () => {
+const Timer = ({ setTime }) => {
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
   });
+
   // Target date set ====
-  const targetDate = new Date("2025-07-20T00:00:00");
+  // const targetDate = new Date("2025-07-20T00:00:00");
+  const targetDate = new Date(setTime);
 
   // time comedown web worker easy to your website
   useEffect(() => {

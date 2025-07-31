@@ -1,7 +1,6 @@
-import { CaregoryItems } from "../../../../Data/category";
+import { Category } from "../../../../Data/category";
 import { FaChevronRight } from "react-icons/fa";
 import BannerImg from "../../../assets/BannerImg/Frame 561.jpg";
-import "slick-carousel/slick/slick.css";
 import Slider from "react-slick";
 import { useState } from "react";
 const Banner = () => {
@@ -15,22 +14,27 @@ const Banner = () => {
     slidesToScroll: 1,
     arrows: false,
     appendDots: (dots) => (
-      <div
-        style={{
-          position: "absolute",
-          bottom: "5%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          borderRadius: "10px",
-          padding: "10px",
-        }}
-      >
-        <ul style={{ margin: "0px", display: "flex", textAlign: "center" }}>
-          {" "}
-          {dots}{" "}
-        </ul>
+      <div style={{ bottom: "7px" }}>
+        <ul style={{}}> {dots} </ul>
       </div>
     ),
+    // appendDots: (dots) => (
+    //   <div
+    //     style={{
+    //       position: "absolute",
+    //       bottom: "5%",
+    //       left: "50%",
+    //       transform: "translateX(-50%)",
+    //       borderRadius: "10px",
+    //       padding: "10px",
+    //     }}
+    //   >
+    //     <ul style={{ margin: "0px", display: "flex", textAlign: "center" }}>
+    //       {" "}
+    //       {dots}{" "}
+    //     </ul>
+    //   </div>
+    // ),
     customPaging: (i) =>
       i == currentSlide ? (
         <div
@@ -66,7 +70,7 @@ const Banner = () => {
         <div className="flex justify-center">
           <div className="ragular w-[20%] border-e-[1.5px] border-r-[#ddd]">
             <ul className="pt-10">
-              {CaregoryItems?.map((item) => (
+              {Category?.map((item) => (
                 <li
                   className="relative font-poppins text-md text-black font-normal py-3.5 hover:ps-3 hover:bg-gray-200 transition-all"
                   key={item?.id}

@@ -3,13 +3,14 @@ import Frame611 from "../../assets/ProductImg/Frame611.png";
 import { GiSelfLove } from "react-icons/gi";
 import { IoEyeOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa";
-const Product = () => {
+
+const ProductCard = () => {
   return (
     <div>
-      <div className="bg-amber-200 mt-[40px]">
-        <div className="w-[270px]">
-          {/* Img part*/}
-          <div className="w-[270px] h-[250px] px-[40px] py-[35px] bg-Secondary rounded flex justify-center relative">
+      <div className="mt-[40px]">
+        <div className="group w-[270px]">
+          {/*=== Img part ====*/}
+          <div className="w-[300px] h-[300px] px-[40px] py-[35px] bg-Secondary rounded flex justify-center relative cursor-pointer overflow-hidden">
             <div>
               <picture>
                 <img
@@ -30,8 +31,12 @@ const Product = () => {
                 <IoEyeOutline />
               </span>
             </div>
+            {/* ADD TO CARD */}
+            <div className=" absolute bottom-[-60px] group-hover:bottom-0 transition-all duration-400 bg-black h-[41px] w-full text-text font-poppins font-medium text-[16px] flex justify-center items-center">
+              ADD TO CARD
+            </div>
           </div>
-          {/* description part */}
+          {/*==== description part =====*/}
           <div className="flex flex-col gap-y-2 mt-4 ">
             <span className="font-poppins font-bold">HAVIT HV-G92 Gamepad</span>
             <span className="font-poppins font-bold text-Secondary2">
@@ -56,4 +61,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default ProductCard;
