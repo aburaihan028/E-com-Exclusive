@@ -3,11 +3,8 @@ import Button from "../../CommonComponents/Button";
 import ProductCard from "../../CommonComponents/ProductCard";
 import ProductCommonLayout from "../../CommonComponents/ProductCommonLayout";
 import { useGetAllProductQuery } from "../../../Features/AllSlice/Api/product.Api";
-import { useSelector, useDispatch } from "react-redux";
 
 const FlashSales = () => {
-  const dispatch = useDispatch();
-
   // fech data
   const { data, error, isLoading } = useGetAllProductQuery();
 
