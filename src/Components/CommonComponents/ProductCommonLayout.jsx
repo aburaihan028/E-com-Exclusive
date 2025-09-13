@@ -14,6 +14,7 @@ const ProductCommonLayout = ({
   pertialItemShow = 4,
   componentData = [],
   isLoading,
+  viewBtn = false,
 }) => {
   const slideRef = useRef(null);
 
@@ -58,6 +59,11 @@ const ProductCommonLayout = ({
                 <IoMdArrowForward />
               </span>
             </h2>
+          </div>
+        )}
+        {viewBtn && (
+          <div className="bg-button2 text-md font-poppins font-medium text-primary py-[16px] px-[48px] rounded cursor-pointer">
+            View All
           </div>
         )}
       </div>

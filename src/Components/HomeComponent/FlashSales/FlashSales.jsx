@@ -10,7 +10,7 @@ const FlashSales = () => {
 
   return (
     <div className="mt-[140px]">
-      <div className="container m-auto pb-[60px] border-b border-b-[#ddd]">
+      <div className="container m-auto">
         <ProductCommonLayout
           ProductCard={ProductCard}
           isArrowsTrue={true}

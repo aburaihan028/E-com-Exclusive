@@ -5,8 +5,8 @@ import { CategoryBrowse } from "../../../../Data/category";
 
 const Category = () => {
   return (
-    <div className="mt-[140px]">
-      <div className="container m-auto pb-[60px] border-b border-b-[#ddd]">
+    <div className="mt-[60px]">
+      <div className="container m-auto pt-[80px] border-t border-t-[#ddd]">
         <ProductCommonLayout
           heading={"Categories"}
           description={"Browse By Category"}

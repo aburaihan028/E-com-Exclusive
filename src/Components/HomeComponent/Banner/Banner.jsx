@@ -68,6 +68,7 @@ const Banner = () => {
     <div>
       <div className="container m-auto">
         <div className="flex justify-center">
+          {/* Menu Bar */}
           <div className="ragular w-[20%] border-e-[1.5px] border-r-[#ddd]">
             <ul className="pt-10">
               {Category?.map((item) => (

@@ -22,9 +22,11 @@ const ProductCard = ({ itemData }) => {
                 />
               </picture>
             </div>
-            <div className="flex items-center justify-center w-[65px] h-[26px] bg-Secondary2 text-text text-[14px] font-poppins font-normal rounded absolute top-[12px] left-[12px]">
-              - {itemData ? itemData.discountPercentage : 0}%
-            </div>
+            {itemData.discountPercentage && (
+              <div className="flex items-center justify-center w-[65px] h-[26px] bg-Secondary2 text-text text-[14px] font-poppins font-normal rounded absolute top-[12px] left-[12px]">
+                - {itemData ? itemData.discountPercentage : 0}%
+              </div>
+            )}
             <div className="absolute top-[12px] right-[12px] flex flex-col gap-y-[12px]">
               <span className="w-[40px] h-[40px] text-[18px] rounded-full bg-primary flex justify-center items-center hover:bg-Secondary2 hover:text-white hover:scale-[1.1] transition-all cursor-pointer">
                 <GiSelfLove />

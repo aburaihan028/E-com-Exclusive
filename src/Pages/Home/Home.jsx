@@ -3,6 +3,8 @@ import Banner from "../../Components/HomeComponent/Banner/Banner";
 import Header from "../../Components/HomeComponent/Navbar/Header";
 import Category from "../../Components/HomeComponent/Category/Category";
 import FlashSales from "../../Components/HomeComponent/FlashSales/FlashSales";
+import BestSelling from "../../Components/HomeComponent/BestSelling/BestSelling";
+import Experience from "../../Components/HomeComponent/Experience/Experience";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
       <Banner />
       <FlashSales />
       <Category />
+      <BestSelling />
+      <Experience />
     </div>
   );
 };
