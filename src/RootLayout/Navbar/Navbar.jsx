@@ -43,9 +43,9 @@ const Navbar = () => {
           {/* Middle side navbar */}
           <div>
             <ul className="ragular flex items-center gap-x-[48px]">
-              {navbar?.map(({ item, id }) => (
-                <li className="navbarhover" key={id}>
-                  <NavLink to={`/${item}`}>{item}</NavLink>
+              {navbar?.map(({ item, id, path }) => (
+                <li className="navbarhover hover:text-text1" key={id}>
+                  <NavLink to={`/${path}`}>{item}</NavLink>
                 </li>
               ))}
             </ul>
@@ -78,8 +78,8 @@ const Navbar = () => {
                     <FaUser />
                   </span>
                 </div>
-                {/* Dropdown Menu */}
 
+                {/* Dropdown Menu */}
                 {account && (
                   <div className="absolute right-[3%] top-[104%] w-[224px] bg-userbg bg-blur-[150px] ps-5 pt-3.5 pb-2.5 flex flex-col gap-y-3 text-primary rounded-[3PX] z-50">
                     <div className="flex items-center gap-x-4 hover:scale-105 transition-all">

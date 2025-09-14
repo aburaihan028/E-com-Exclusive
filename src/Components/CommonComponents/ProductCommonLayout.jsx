@@ -6,7 +6,7 @@ import { IoMdArrowBack, IoMdArrowForward } from "react-icons/io";
 import ProductCardSkeleton from "../../helpers/ProductCardSkeleton";
 const ProductCommonLayout = ({
   ProductCard = () => <ProductCardSkeleton />,
-  isArrowsTrue,
+  isArrowsTrue = false,
   heading = "head missing",
   description = "description missing",
   timeShow = false,
@@ -15,6 +15,7 @@ const ProductCommonLayout = ({
   componentData = [],
   isLoading,
   viewBtn = false,
+  rows = 1,
 }) => {
   const slideRef = useRef(null);
 
@@ -30,6 +31,7 @@ const ProductCommonLayout = ({
     speed: 500,
     slidesToShow: pertialItemShow || 4,
     slidesToScroll: 2,
+    rows: rows,
   };
   return (
     <div>
