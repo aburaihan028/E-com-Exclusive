@@ -8,7 +8,7 @@ const BreadCrumb = () => {
   // উদাহরণ: ["products", "electronics"]
 
   return (
-    <div className="py-5">
+    <div>
       <div className="container m-auto flex gap-2 items-center">
         {/* Home link */}
         <Link to="/" className="text-blue-500 hover:underline">

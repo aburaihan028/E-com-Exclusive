@@ -7,6 +7,7 @@ import { useGetAllProductQuery } from "../../../Features/AllSlice/Api/product.Ap
 const FlashSales = () => {
   // fech data
   const { data, error, isLoading } = useGetAllProductQuery();
+  // console.log(data);
 
   return (
     <div className="mt-[140px]">

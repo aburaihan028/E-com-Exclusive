@@ -11,9 +11,16 @@ export const productApi = createApi({
     getSellingProduct: build.query({
       query: () => "/products/category/smartphones",
     }),
+    getCategoryListProduct: build.query({
+      query: () => "products/category-list",
+    }),
   }),
 });
 
 // Export hooks for usage in functional components, which are
 // auto-generated based on the defined endpoints
-export const { useGetAllProductQuery, useGetSellingProductQuery } = productApi;
+export const {
+  useGetAllProductQuery,
+  useGetSellingProductQuery,
+  useGetCategoryListProductQuery,
+} = productApi;
